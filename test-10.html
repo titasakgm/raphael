@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src='raphael.js'></script>
+
+<script type='text/javascript'>
+window.onload = function () {
+  // Creates canvas 200 × 200 at 0, 0
+  var paper = Raphael(0, 0, 200, 200);
+
+  c = paper.circle(100,100,100);
+
+  // makes the circle half as wide, and 75% as high
+  c.scale(.5, .75);
+
+  c.attr({fill: "#000", stroke: "#f00", opacity: 0.5});
+
+}
+</script> 
+
+</head>
+<body>
+</body>
+</html>

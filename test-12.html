@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src='raphael.js'></script>
+
+<script type='text/javascript'>
+window.onload = function () {
+  // Creates canvas 200 × 200 at 0, 0
+  var paper = Raphael(0, 0, 200, 200);
+
+  element = paper.circle(100,100,50);
+
+  element.click(function (event) {
+    this.attr({fill: "green"});
+  });
+  element.dblclick(function (event) {
+    this.attr({fill: "pink"});
+  });
+  element.mousedown(function (event) {
+    this.attr({fill: "yellow"});
+  });
+  element.mousemove(function (event) {
+    this.attr({fill: "blue"});
+  });
+  element.mouseout(function (event) {
+    this.attr({fill: "brown"});
+  });
+  element.mouseover(function (event) {
+    this.attr({fill: "gray"});
+  });
+  element.mouseup(function (event) {
+    this.attr({fill: "white"});
+  });
+  element.hover(function (event) {
+    this.attr({fill: "red"});
+  }, function (event) {
+    this.attr({fill: "black"});
+  }, overScope, outScope);
+}
+</script> 
+
+</head>
+<body>
+</body>
+</html>

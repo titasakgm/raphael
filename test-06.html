@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src='raphael.js'></script>
+
+<script type='text/javascript'>
+window.onload = function () {
+  // Creates canvas 200 × 200 at 0, 0
+  var paper = Raphael(0, 0, 200, 200);
+
+  var st = paper.set();
+  st.push(
+    paper.circle(50, 50, 50),
+    paper.circle(120, 50, 50)
+  );
+  st.attr({fill: "red"});
+  st.attr({stroke: "red"});
+}
+</script> 
+
+</head>
+<body>
+</body>
+</html>

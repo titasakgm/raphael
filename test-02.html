@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src='raphael.js'></script>
+
+<script type='text/javascript'>
+window.onload = function () {
+  var set = Raphael(["notepad", 320, 200, {
+    type: "rect",
+    x: 10,
+    y: 10,
+    width: 25,
+    height: 25,
+    stroke: "#f00"
+  }, {
+    type: "text",
+    x: 30,
+    y: 40,
+    text: "ทดสอบ"
+  }]);
+}
+</script> 
+
+</head>
+<body>
+<div id="notepad"></div>
+</body>
+</html>

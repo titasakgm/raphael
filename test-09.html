@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src='raphael.js'></script>
+
+<script type='text/javascript'>
+window.onload = function () {
+  // Creates canvas 200 × 200 at 0, 0
+  var paper = Raphael(0, 0, 200, 200);
+
+  // draw a circle at coordinate 10,10 with radius of 10
+  var c = paper.circle(100, 100, 100);
+  c.node.onClick = function () {
+    c.attr("fill", "red");
+  };
+  c.show();
+}
+</script> 
+
+</head>
+<body>
+</body>
+</html>
